@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Este es mi proyecto de planetas :V</title>
+	<style>
+		body
+		{
+			background-color: red;
+			color: white;
+			font-family: Arial;
+		}
+	</style>
+</head>
+<body>
+	<h1>Este es mi proyecto en el que yo estoy trabajando</h1>
+	<p>Solo espero que me tengan paciencia</p>
+	<script>
+		var usuario = parseInt(prompt("Cual es tu peso?")); 
+		var planeta = parseInt(prompt("Elige tu planeta:\n1 Marte \n2 Jupiter\n3 Kripton"));
+		var peso = parseInt(usuario);
+		var g_tierra = 9.8;
+		var g_jupiter = 24.8;
+		var g_marte = 3.7;
+		var g_kripton = 4.8;
+		var peso_final;
+		
+		if (planeta == 1)
+		 {
+			peso_final = peso * g_marte / g_tierra;
+			peso_final = parseInt(peso_final);
+			document.write("Tu peso en Marte es " + peso_final + " kilos");
+			
+		}
+		else if(planeta == 2)
+		{
+			peso_final = peso * g_jupiter / g_tierra;
+			peso_final = parseInt(peso_final);
+			document.write("Tu peso en Jupiter es " + peso_final + " kilos");
+		}
+		else if(planeta == 3)
+		{
+			peso_final = peso * g_kripton / g_tierra;
+			peso_final = parseInt(peso_final);
+			document.write("Tu peso en Kripton es " + peso_final + " kilos");
+		}
+		else 
+		{
+			peso_final = document.write("Planeta invalido");
+		}
+
+	</script>
+</body>
+</html>

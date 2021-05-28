@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Este es mi trabajo de planetas</title>
+    <style>
+        body
+		{
+			background-color: red;
+			color: white;
+			font-family: Arial;
+		}
+    </style>
+</head>
+<body>
+    <h1>Este es mi proyecto</h1>
+    <p>Espero que les guste mi proyecto de planetas</p>
+    <script>        
+        var pregunta = prompt("Te gustaria saber cual es tu peso en otro planeta?\nPuedes escribir si o no")    
+        var g_tierra = 9.8;
+        var g_jupiter = 24.8;
+        var g_marte = 3.7;
+        var g_kripton = 5.5;  
+        if (pregunta == "si")
+        {
+            var peso = parseInt(prompt("Cual es tu peso?"));
+            var planeta = parseInt(prompt("Escoge tu planeta?\n1 para Marte\n2 para Jupiter\n3 para Kripton"));
+
+        }
+        else if (pregunta == "no")
+        {
+            alert("Gracias por visitar mi paguina web :)")
+        }
+        else
+        {
+            alert("Solo esta disponible las opciones si y no")
+        }
+                
+            if (planeta === 1)
+        {
+            peso_final = peso * g_marte / g_tierra;
+            peso_final = parseInt(peso_final);
+            alert("Tu peso en Marte es " + peso_final + " kilos");
+
+            if (planeta === 3);
+        {
+            peso_final = peso * g_kripton / g_tierra;
+            peso_final = parseInt(peso_final);
+            alert("Tu peso en Kripton es " + peso_final + " kilos");
+        }   
+            
+        }
+            else if (planeta === 2);
+        {
+            peso_final = peso * g_jupiter / g_tierra;
+            peso_final = parseInt(peso_final);
+            alert("Tu peso en Jupiter es " + peso_final + " kilos");
+
+        }
+        
+    
+        
+    </script>
+</body>
+</html>
